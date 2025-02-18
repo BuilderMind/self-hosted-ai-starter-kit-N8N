@@ -5,6 +5,7 @@
 - Instalar `docker desktop`
     - Instalar `WPL` (con instalación docker desktop)
         - Desde terminal actualizar con:
+          
         
         ```bash
         wsl --update

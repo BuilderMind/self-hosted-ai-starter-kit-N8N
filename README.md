@@ -36,11 +36,7 @@
 
 - Instalar `N8N`:
     - Crear carpeta en C:\Users\tu-usuario\n8n (por ejemplo) o en otro directorio
-    - Copiar archivos a la carpeta creada
- 
-        Repo Oficial:
-        https://github.com/BuilderMind/self-hosted-ai-starter-kit-N8N
-        
+    - Copiar archivos a la carpeta creada        
 
 - Instalar `Ngrok`:
     - Ir a https://ngrok.com/

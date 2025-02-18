@@ -36,10 +36,9 @@
 
 - Instalar `N8N`:
     - Crear carpeta en C:\Users\tu-usuario\n8n (por ejemplo) o en otro directorio
-    - Copiar archivos a la carpeta
-        
-        [n8n.rar](attachment:a0662ca8-3186-4c9e-8123-ef8d8cb181aa:n8n.rar)
-        
+    - Copiar archivos a la carpeta creada
+ 
+        Repo Oficial:
         https://github.com/BuilderMind/self-hosted-ai-starter-kit-N8N
         
 

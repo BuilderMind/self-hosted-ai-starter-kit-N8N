@@ -1,4 +1,4 @@
-# self-hosted-ai-starter-kit-N8N
+# self-hosted-ai-starter-kit-N8N-Ngrok
 
 # Instalar Docker Desktop y N8N con Ollama, Qdrant, Postgres y Ngrok
 

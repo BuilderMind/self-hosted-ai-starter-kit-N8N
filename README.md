@@ -1,0 +1,1 @@
+# self-hosted-ai-starter-kit-N8N

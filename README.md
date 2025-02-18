@@ -181,3 +181,4 @@ docker run --rm -v n8n_storage:/data -v ${PWD}:/backup busybox tar xvf /backup/n
 ### **Verificación Final:**
 
 - Accede a `http://localhost:5678` para confirmar que tus flujos y configuraciones están presentes.
+- Repo Oficial: https://github.com/BuilderMind/self-hosted-ai-starter-kit-N8N

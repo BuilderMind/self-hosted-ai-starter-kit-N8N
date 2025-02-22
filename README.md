@@ -1,11 +1,8 @@
 # self-hosted-ai-starter-kit-N8N-Ngrok
 
-# Instalar Docker Desktop y N8N con Ollama, Qdrant, Postgres y Ngrok
-
 - Instalar `docker desktop`
     - Instalar `WPL` (con instalación docker desktop)
         - Desde terminal actualizar con:
-          
         
         ```bash
         wsl --update
@@ -37,7 +34,12 @@
 
 - Instalar `N8N`:
     - Crear carpeta en C:\Users\tu-usuario\n8n (por ejemplo) o en otro directorio
-    - Copiar archivos a la carpeta creada        
+    - Copiar archivos a la carpeta
+        
+        [n8n.rar](attachment:a0662ca8-3186-4c9e-8123-ef8d8cb181aa:n8n.rar)
+        
+        https://github.com/BuilderMind/self-hosted-ai-starter-kit-N8N
+        
 
 - Instalar `Ngrok`:
     - Ir a https://ngrok.com/
@@ -173,6 +175,34 @@ docker run --rm -v n8n_storage:/data -v ${PWD}:/backup busybox tar xvf /backup/n
     docker compose --profile cpu up -d
     
     ```
+    
+
+## Para instalar modelos en Ollama:
+
+- En la terminal ir a el directorio de n8n creado donde se encuentra el Docker compose (`cd ‘C:\Users\alexp\n8n`’)
+- Dentro del directorio pegar este comando: `docker exec -it ollama /bin/bash`
+- Dentro del contenedor Ollama, busca en la pagina oficial de Ollama el modelo a descargar y copiar el comando para instalar
+
+```bash
+ollama list  # Para ver los modelos instalados
+ollama rm deepseek-r1  # Para eliminar un modelo específico
+ollama pull mistral  # Para descargar un nuevo modelo
+ollama rm deepseek-r1 mistral  # Para eliminar varios modelos a la vez
+
+exit  #Para salir al directorio de nuevo y salir del contenedor ollama
+
+```
+
+### **Verificación Final:**
+
+- Accede a `http://localhost:5678` para confirmar que tus flujos y configuraciones están presentes.
+- Repo Oficial: https://github.com/n8n-io/self-hosted-ai-starter-kit?tab=readme-ov-file
+
+---
+
+**Nota:** Los comandos deben ejecutarse en una sola línea (sin saltos).
+
+**⚠️ Importante:** Restaura siempre con los contenedores detenidos para evitar conflictos.
     
 
 ### **Verificación Final:**
